@@ -2,6 +2,8 @@
 
 ## Introduction
 
+This project aims to be a good starting point for a java / maven / angularjs project.
+
 check it out:
 
 ```bash
