@@ -40,7 +40,8 @@ public class SeedApplication extends Application {
             // Class jsonProvider = Class.forName("org.glassfish.jersey.jettison.JettisonFeature");
             resources.add(jsonProvider);
         } catch (final ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(getClass().getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(getClass().getName())
+                                    .log(java.util.logging.Level.SEVERE, null, ex);
         }
         addRestResourceClasses(resources);
         return resources;
