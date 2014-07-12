@@ -1,6 +1,7 @@
 'use strict';
 
 /* jasmine specs for controllers go here */
+
 describe('Controller tests', function () {
 
    describe('HomeController', function () {

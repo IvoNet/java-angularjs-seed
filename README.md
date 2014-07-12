@@ -5,7 +5,7 @@
 check it out:
 
 ```bash
-git clone http...
+git clone https://github.com/IvoNet/java-angularjs-seed.git
 ```
 
 
@@ -13,7 +13,7 @@ git clone http...
 
 ```bash
 npm install
-mvn packge
+mvn package
 ```
 
 
