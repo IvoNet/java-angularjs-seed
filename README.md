@@ -1,4 +1,4 @@
-# Java / maven / AngularJs seed project
+# Java / Maven / AngularJs seed project
 
 ## Introduction
 
