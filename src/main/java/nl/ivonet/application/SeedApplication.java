@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2013 by Ivo Woltring (http://ivonet.nl)
+ * Copyright (c) 2014 by Ivo Woltring (http://ivonet.nl)
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
  *   you may not use this file except in compliance with the License.
@@ -24,6 +24,7 @@ import javax.ws.rs.core.Application;
 import java.util.Set;
 
 /**
+ * Basic JAX-RS application.
  *
  * @author Ivo Woltring
  */
@@ -47,8 +48,8 @@ public class SeedApplication extends Application {
         return resources;
     }
 
-    /*
-    Add your own resources here.
+    /**
+     * Add your own resources here.
      */
     private void addRestResourceClasses(final Set<Class<?>> resources) {
         resources.add(HomeControler.class);

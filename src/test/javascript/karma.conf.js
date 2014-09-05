@@ -6,7 +6,7 @@ module.exports = function(config){
     files : [
       'src/main/webapp/vendor/angular**/**.min.js',
       'src/main/webapp/vendor/angular-mocks/angular-mocks.js',
-      'src/main/webapp/js/**/*.js',
+      'src/main/javascript/**/*.js',
       'src/test/javascript/unit/**/*.js'
     ],
 
