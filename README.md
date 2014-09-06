@@ -10,14 +10,26 @@ check it out:
 git clone https://github.com/IvoNet/java-angularjs-seed.git
 ```
 
+## Prerequisites
+* Firefox or Chrome
+* [npm](https://www.npmjs.org)
+* [nodejs](http://nodejs.org)
+* [JDK](http://www.oracle.com/technetwork/java/javaee/downloads/index.html)
+* [IDE](http://www.jetbrains.com/)
+* [bower](http://bower.io)
+* [PhantomJs](http://phantomjs.org) or `brew install phantomjs`
+* [Application Server](https://glassfish.java.net/download.html) or `brew install glassfish`
+
 ## Installation
 
 ```bash
-npm install
 mvn package
 ```
 
+When running this command a couple of things happen:
+* Bower install will be run
+
 ## Status of the project
 
-see [here](http://www.ivonet.it/Java/java-angularjs-seed)
+See my [blog](http://www.ivonet.it/Java/java-angularjs-seed)
 
