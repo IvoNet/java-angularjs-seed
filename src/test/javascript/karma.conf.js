@@ -7,7 +7,7 @@ module.exports = function(config){
       'src/main/webapp/vendor/angular**/**.min.js',
       'src/main/webapp/vendor/angular-mocks/angular-mocks.js',
       'src/main/javascript/**/*.js',
-      'src/test/javascript/unit/**/*.js'
+      'src/test/javascript/**/*Spec.js'
     ],
 
     autoWatch : true,
@@ -25,7 +25,7 @@ module.exports = function(config){
 
     junitReporter : {
       outputFile: 'target/test_out/unit.xml',
-      suite: 'src/test/javascript/unit'
+        suite: 'src/test/javascript'
     }
 
   });

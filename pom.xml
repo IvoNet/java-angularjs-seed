@@ -13,6 +13,7 @@
     <properties>
         <artifact.name>app</artifact.name>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
+        <vendor.loc>src/main/webapp/vendor</vendor.loc>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -132,13 +133,13 @@
                 <configuration>
                     <webDriverClassName>org.openqa.selenium.phantomjs.PhantomJSDriver</webDriverClassName>
                     <preloadSources>
-                        <source>src/main/webapp/vendor/jquery/dist/jquery.js</source>
-                        <source>src/main/webapp/vendor/angular/angular.min.js</source>
-                        <source>src/main/webapp/vendor/angular-route/angular-route.min.js</source>
-                        <source>src/main/webapp/vendor/angular-mocks/angular-mocks.js</source>
+                        <source>${vendor.loc}/jquery/dist/jquery.js</source>
+                        <source>${vendor.loc}/angular/angular.min.js</source>
+                        <source>${vendor.loc}/angular-route/angular-route.min.js</source>
+                        <source>${vendor.loc}/angular-mocks/angular-mocks.js</source>
                     </preloadSources>
                     <jsSrcDir>src/main/javascript</jsSrcDir>
-                    <jsTestSrcDir>src/test/javascript/unit</jsTestSrcDir>
+                    <jsTestSrcDir>src/test/javascript</jsTestSrcDir>
                     <specIncludes>
                         <include>*Spec.js</include>
                     </specIncludes>
