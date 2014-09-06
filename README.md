@@ -28,6 +28,9 @@ mvn package
 
 When running this command a couple of things happen:
 * Bower install will be run
+* JSLint will be run in src/main/javascript sources
+* Javascript will be minified
+* All the other standard maven phases.
 
 ## Status of the project
 
