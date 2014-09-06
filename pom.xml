@@ -100,6 +100,7 @@
                 <executions>
                     <execution>
                         <id>compress-js</id>
+                        <phase>process-resources</phase>
                         <goals>
                             <goal>jslint</goal>
                             <goal>compress</goal>
@@ -108,7 +109,7 @@
                 </executions>
                 <configuration>
                     <failOnWarning>true</failOnWarning>
-                    <outputDirectory>target/app/js/</outputDirectory>
+                    <outputDirectory>target/${artifact.name}/js</outputDirectory>
                     <nosuffix>true</nosuffix>
                     <excludes>
                         <exclude>vendor/**</exclude>
@@ -117,24 +118,6 @@
                     </excludes>
                 </configuration>
             </plugin>
-            <!--<plugin>-->
-            <!--<groupId>gr.abiss.mvn.plugins</groupId>-->
-            <!--<artifactId>maven-jstools-plugin</artifactId>-->
-            <!--<version>0.7</version>-->
-            <!--<configuration>-->
-            <!--<jsDir>src/main/javascript</jsDir>-->
-            <!--<includePrivate>true</includePrivate>-->
-            <!--<includeUndocumented>true</includeUndocumented>-->
-            <!--</configuration>-->
-            <!--<reportSets>-->
-            <!--<reportSet>-->
-            <!--<reports>-->
-            <!--<report>jslint</report>-->
-            <!--<report>jsdoc</report>-->
-            <!--</reports>-->
-            <!--</reportSet>-->
-            <!--</reportSets>-->
-            <!--</plugin>-->
             <!--<plugin>-->
             <!--<groupId>com.github.searls</groupId>-->
             <!--<artifactId>jasmine-maven-plugin</artifactId>-->
@@ -149,16 +132,15 @@
             <!--</executions>-->
             <!--<configuration>-->
             <!--<preloadSources>-->
-            <!--<source>${project.basedir}/src/main/webapp/vendor/jquery/1.10.2/jquery.js</source>-->
-            <!--<source>${project.basedir}/src/main/webapp/vendor/angular/1.0.5/angular.js</source>-->
+            <!--<source>/vendor/jquery/dist/jquery.js</source>-->
+            <!--<source>/vendor/angular/angular.js</source>-->
             <!--</preloadSources>-->
-            <!--<jsSrcDir>src/main/webapp/js</jsSrcDir>-->
-            <!--<jsTestSrcDir>src/test/webapp/js</jsTestSrcDir>-->
+            <!--<jsSrcDir>src/main/javascript</jsSrcDir>-->
+            <!--<jsTestSrcDir>src/test/javascript/unit</jsTestSrcDir>-->
             <!--<specIncludes>-->
             <!--<include>*Spec.js</include>-->
             <!--</specIncludes>-->
             <!--</configuration>-->
-
             <!--</plugin>-->
         </plugins>
     </build>
