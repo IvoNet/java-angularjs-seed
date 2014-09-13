@@ -116,6 +116,7 @@
                 </executions>
                 <configuration>
                     <failOnWarning>true</failOnWarning>
+                    <!--<outputDirectory>src/main/webapp/js</outputDirectory>-->
                     <outputDirectory>target/${artifact.name}/js</outputDirectory>
                     <nosuffix>true</nosuffix>
                     <excludes>
