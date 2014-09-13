@@ -109,7 +109,7 @@
                         <id>compress-js</id>
                         <phase>process-resources</phase>
                         <goals>
-                            <goal>jslint</goal>
+                            <!--<goal>jslint</goal>-->
                             <goal>compress</goal>
                         </goals>
                     </execution>
@@ -120,6 +120,7 @@
                     <outputDirectory>target/${artifact.name}/js</outputDirectory>
                     <nosuffix>true</nosuffix>
                     <excludes>
+                        <exclude>**/js/**/*js</exclude>
                         <exclude>vendor/**</exclude>
                         <exclude>**/*min.css</exclude>
                         <exclude>**/*min.js</exclude>
@@ -187,6 +188,17 @@
                     </filesets>
                 </configuration>
             </plugin>
+            <!--<plugin>-->
+            <!--<groupId>org.eclipse.jetty</groupId>-->
+            <!--<artifactId>jetty-maven-plugin</artifactId>-->
+            <!--<version>9.2.2.v20140723</version>-->
+            <!--<configuration>-->
+            <!--<scanIntervalSeconds>10</scanIntervalSeconds>-->
+            <!--<webApp>-->
+            <!--<contextPath>/${artifact.name}</contextPath>-->
+            <!--</webApp>-->
+            <!--</configuration>-->
+            <!--</plugin>-->
         </plugins>
     </build>
 </project>
