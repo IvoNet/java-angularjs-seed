@@ -1,46 +1,34 @@
-<div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">
-        <div class="container-fluid">
-            <a class="brand" href="#">Seed App</a>
-
-            <div class="nav-collapse collapse">
-                <p class="navbar-text pull-right">
-                    <button class="btn btn-mini btn-inverse" type="button" data-toggle="button"
-                            ng-click="toggleDebug()">Debug
-                    </button>
-                </p>
-                <ul class="nav">
-                    <li class="active"><a href="">Home</a></li>
-                    <!--<li><a href="#">About</a></li>r-->
-                    <li><a href="http://www.ivonet.nl/home/contact">Contact</a></li>
-                </ul>
-            </div>
+<!-- Fixed navbar -->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Bootstrap theme</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="http://www.ivonet.nl/home/contact" target="_blank">Contact</a></li>
+            </ul>
+            <p class="navbar-text pull-right">
+                <button class="btn btn-xs btn-link" type="button" data-toggle="button"
+                        data-ng-click="toggleDebug()">Debug
+                </button>
+            </p>
         </div>
     </div>
 </div>
-<div><br/></div>
-<div class="container-fluid">
-    <div class="row-fluid">
-        <div class="span3">
-            <!--Sidebar content-->
-            <div class="well sidebar-nav">
-                sidebar
-            </div>
-        </div>
-        <div class="span9">
-            <div class="hero-unit" id="books">
-                <br/>
-                <br/>
+<div class="container theme-showcase" role="main">
 
-                <p>{{title}}</p>
-            </div>
-        </div>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <h1>{{title}}!</h1>
+
+        <p>This is a basic Bootstrap theme I used in the seed application.</p>
+
+        <p><a href="theme.html" class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+
     </div>
-</div>
-</div>
-<pre data-ng-model="debug" ng-show="debug">{{ folder | json }}</pre>
 
+</div> <!-- /container -->
 
-<!--<div>-->
-<!--<pre data-ng-model="debug" data-ng-show="debug">{{ data | json }}</pre>-->
-<!--</div>-->
+<pre data-ng-model="debug" data-ng-show="debug">{{ data | json }}</pre>
