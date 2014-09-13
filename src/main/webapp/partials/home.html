@@ -1,7 +1,46 @@
-<p>{{title}}</p>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a class="brand" href="#">Seed App</a>
 
-
-
-<div>
-    <pre data-ng-model="debug" data-ng-show="debug">{{ data | json }}</pre>
+            <div class="nav-collapse collapse">
+                <p class="navbar-text pull-right">
+                    <button class="btn btn-mini btn-inverse" type="button" data-toggle="button"
+                            ng-click="toggleDebug()">Debug
+                    </button>
+                </p>
+                <ul class="nav">
+                    <li class="active"><a href="">Home</a></li>
+                    <!--<li><a href="#">About</a></li>r-->
+                    <li><a href="http://www.ivonet.nl/home/contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
+<div><br/></div>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span3">
+            <!--Sidebar content-->
+            <div class="well sidebar-nav">
+                sidebar
+            </div>
+        </div>
+        <div class="span9">
+            <div class="hero-unit" id="books">
+                <br/>
+                <br/>
+
+                <p>{{title}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<pre data-ng-model="debug" ng-show="debug">{{ folder | json }}</pre>
+
+
+<!--<div>-->
+<!--<pre data-ng-model="debug" data-ng-show="debug">{{ data | json }}</pre>-->
+<!--</div>-->
