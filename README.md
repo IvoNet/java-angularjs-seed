@@ -3,6 +3,7 @@
 ## Introduction
 
 This project aims to be a good starting point for a java / maven / angularjs project.
+(I guess deprecated by now)
 
 check it out:
 
@@ -34,5 +35,5 @@ When running this command a couple of things happen:
 
 ## Status of the project
 
-See my [blog](http://www.ivonet.it/Java/java-angularjs-seed)
+See the article on [DZone](http://ivo2u.nl/5U)
 
