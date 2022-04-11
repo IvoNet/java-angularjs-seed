@@ -4,7 +4,8 @@
 
 This project aims to be a good starting point for a java / maven / angularjs project.
 
-> NOTE: Deprecated
+> NOTE: Deprecated.  
+> 
 > It was a very fine and well used Proof of concept and I learned a lot from it. The artikles resulting from this POC have been read by many people, but as > all things go, this project is no longer a good source of information.
 > Use it as you see fit, but I do not recommend using it for real projects anymore.
 
